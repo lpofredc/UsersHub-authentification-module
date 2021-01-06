@@ -20,9 +20,9 @@ depends_on = None
 
 def upgrade():
     sql_files = ['usershub.sql']
-    if strtobool(context.get_x_argument(as_dictionary=True).get('data', "true")):
+    if strtobool(context.get_x_argument(as_dictionary=True).get('usershub-data', "true")):
         sql_files += ['usershub-data.sql']
-    if strtobool(context.get_x_argument(as_dictionary=True).get('sample-data', "false")):
+    if strtobool(context.get_x_argument(as_dictionary=True).get('usershub-sample-data', "false")):
         sql_files += ['usershub-dataset.sql']
     for sql_file in sql_files:
         operations = pkg_resources.resource_string("pypnusershub.migrations", f"data/{sql_file}").decode('utf-8')
