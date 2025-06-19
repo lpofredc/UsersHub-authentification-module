@@ -90,7 +90,7 @@ typing-extensions==4.12.2
     # via
     #   alembic
     #   marshmallow-sqlalchemy
-urllib3==2.3.0
+urllib3==2.5.0
     # via requests
 utils-flask-sqlalchemy==0.4.1
     # via -r requirements-dependencies.in
