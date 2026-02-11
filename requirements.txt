@@ -16,13 +16,13 @@ blinker==1.9.0
     # via flask
 certifi==2025.1.31
     # via requests
-cffi==1.17.1
+cffi==2.0.0
     # via cryptography
 charset-normalizer==3.4.1
     # via requests
 click==8.1.8
     # via flask
-cryptography==43.0.3
+cryptography==46.0.5
     # via authlib
 flask==3.1.0
     # via
@@ -86,9 +86,10 @@ sqlalchemy==1.4.54
     #   flask-sqlalchemy
     #   marshmallow-sqlalchemy
     #   utils-flask-sqlalchemy
-typing-extensions==4.12.2
+typing-extensions==4.15.0
     # via
     #   alembic
+    #   cryptography
     #   marshmallow-sqlalchemy
 urllib3==2.3.0
     # via requests
